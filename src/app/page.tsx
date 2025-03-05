@@ -1,5 +1,6 @@
 "use client";
 import Card from './components/Card';
+import ProjectCard from './components/ProjectCard';
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
         padding: '2rem',
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
       }}>
-        <Card />
+        <ProjectCard />
       </div>
     </div>
   );
