@@ -5,7 +5,7 @@ export default function Home() {
       minHeight: '100vh'
     }}>
      <h1 style={{ 
-        fontSize: '1.5rem',
+        fontSize: '2.5rem',
         fontWeight: 'bold',
         marginBottom: '0.5rem',
         color: 'white'
@@ -14,7 +14,7 @@ export default function Home() {
       </h1>
 
       <h2 className="gradient-text" style={{ 
-        fontSize: '1.5rem',
+        fontSize: '2.5rem',
         margin: '0',
         marginTop: '0.5rem'
       }}>
