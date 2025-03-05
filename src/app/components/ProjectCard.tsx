@@ -16,10 +16,10 @@ export default function ProjectCard() {
       </h2>
       <div className="w-full">
         <Image
-          src="/drone.png"
+          src="/tilthex.png"
           alt="Drone Research"
-          width={600}
-          height={400}
+          width={300}
+          height={200}
           style={{ width: '100%', height: 'auto' }}
         />
       </div>
@@ -28,10 +28,11 @@ export default function ProjectCard() {
         WebkitBackgroundClip: 'text',
         backgroundClip: 'text',
         color: 'transparent',
-        fontSize: '26px'
+        fontSize: '18px'
       }}>
-        University Of Twente, The Netherlands
+        Safety Metric for Human-Aerial Robot Collaboration in Presence of Aerodynamic Disturbances
       </h2>
+      in progress
     </div>
   );
 } 
