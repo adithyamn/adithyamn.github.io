@@ -1,16 +1,24 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   background-color: #0a192f;
   color: white;
   font-family: system-ui, -apple-system, sans-serif;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .gradient-text {
-  background: linear-gradient(to bottom, #8A2BE2, #9400D3);
+  background: linear-gradient(to right, #8A2BE2, #9400D3);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-weight: bold;
 }

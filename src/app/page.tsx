@@ -1,25 +1,12 @@
+"use client";
+import Card from './components/Card';
+
 export default function Home() {
   return (
-    <main style={{ 
-      padding: '2rem',
-      minHeight: '100vh'
-    }}>
-     <h1 style={{ 
-        fontSize: '2.5rem',
-        fontWeight: 'bold',
-        marginBottom: '0.5rem',
-        color: 'white'
-      }}>
-        Hey, I'm Adithya Mylavarapu Naga
-      </h1>
-
-      <h2 className="gradient-text" style={{ 
-        fontSize: '2.5rem',
-        margin: '0',
-        marginTop: '0.5rem'
-      }}>
-        Robotics Engineer.
-      </h2>
-    </main>
+    <div className="min-h-screen flex items-start justify-center bg-[#0a192f]">
+      <div className="w-[90%] md:w-[600px] mx-auto pt-24">
+        <Card />
+      </div>
+    </div>
   );
 } 
