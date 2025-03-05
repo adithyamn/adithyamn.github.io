@@ -6,3 +6,11 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   min-height: 100vh;
 }
+
+.gradient-text {
+  background: linear-gradient(to bottom, #8A2BE2, #9400D3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
