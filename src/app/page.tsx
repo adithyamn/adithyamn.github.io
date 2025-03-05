@@ -15,19 +15,16 @@ export default function Home() {
       </div>
 
       <h1 style={{ 
-        fontSize: '4rem',
+        fontSize: '1.5rem',
         fontWeight: 'bold',
         marginBottom: '0.5rem',
         color: 'white'
       }}>
-        Hey, I'm <span style={{ 
-          textDecoration: 'underline',
-          textDecorationThickness: '4px'
-        }}>Adithya Mylavarapu Naga</span>
+        Hey, I'm Adithya Mylavarapu Naga
       </h1>
 
       <h2 className="gradient-text" style={{ 
-        fontSize: '3.5rem',
+        fontSize: '1.5rem',
         margin: '0',
         marginTop: '0.5rem'
       }}>
