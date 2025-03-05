@@ -3,9 +3,9 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 export default function Card() {
   return (
-    <div>
+    <div className="text-center">
       <div>
-        <div className="flex items-center gap-2 mb-4">
+        <div className="flex items-center justify-center gap-2 mb-4">
           <div className="w-2 h-2 bg-green-500 rounded-full"></div>
           <span className="text-gray-400 text-sm">Online.</span>
         </div>
@@ -24,7 +24,7 @@ export default function Card() {
         </h2>
 
         {/* Social Links */}
-        <div className="flex gap-6 mb-6">
+        <div className="flex justify-center gap-6 mb-6">
           <a href="https://linkedin.com" 
              className="text-[#0077B5] hover:opacity-80" 
              target="_blank" 
@@ -44,7 +44,7 @@ export default function Card() {
         </div>
 
         {/* Description */}
-        <p className="text-gray-400 text-base leading-relaxed">
+        <p className="text-gray-400 text-base leading-relaxed max-w-lg mx-auto">
           Hi, I am Adithya. Experienced robotics engineer from
           India, with expertise in ROS, Python, and Computer Vision.
           Ready to create innovative robotics solutions!
