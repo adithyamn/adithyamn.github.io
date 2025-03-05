@@ -1,17 +1,12 @@
 "use client";
-import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 export default function Card() {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div>
       <div>
         <div className="flex items-center gap-2 mb-4">
-          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
           <span className="text-gray-400 text-sm">Online.</span>
         </div>
 
@@ -31,19 +26,20 @@ export default function Card() {
         {/* Social Links */}
         <div className="flex gap-6 mb-6">
           <a href="https://linkedin.com" 
-             className="bg-[#2d2d2d] hover:bg-[#3d3d3d] text-white p-2 rounded-md flex items-center justify-center transition-colors" 
-             style={{ width: '40px', height: '40px' }}>
-            <FaLinkedin size={22} />
+             className="text-[#0077B5] hover:opacity-80" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            <FaLinkedin size={28} />
           </a>
           <a href="https://github.com" 
-             className="bg-[#2d2d2d] hover:bg-[#3d3d3d] text-white p-2 rounded-md flex items-center justify-center transition-colors" 
-             style={{ width: '40px', height: '40px' }}>
-            <FaGithub size={22} />
+             className="text-white hover:opacity-80" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            <FaGithub size={28} />
           </a>
           <a href="mailto:your@email.com" 
-             className="bg-white hover:bg-gray-100 text-black p-2 rounded-md flex items-center justify-center transition-colors" 
-             style={{ width: '40px', height: '40px' }}>
-            <FaEnvelope size={22} />
+             className="text-white hover:opacity-80">
+            <FaEnvelope size={28} />
           </a>
         </div>
 
@@ -54,6 +50,6 @@ export default function Card() {
           Ready to create innovative robotics solutions!
         </p>
       </div>
-    </motion.div>
+    </div>
   );
 } 
