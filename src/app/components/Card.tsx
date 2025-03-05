@@ -4,11 +4,6 @@ import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 export default function Card() {
   return (
     <>
-      <div className="flex items-center gap-2 mb-4">
-        <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-        <span className="text-gray-400 text-sm">Online.</span>
-      </div>
-
       <h1 className="text-4xl md:text-5xl font-bold text-white mb-2">
         Hey, I'm <span className="underline decoration-4">Adithya</span>
       </h1>
@@ -19,7 +14,7 @@ export default function Card() {
         backgroundClip: 'text',
         color: 'transparent',
       }}>
-        Robotics Engineer.
+        Systems and Control Engineer.
       </h2>
 
       {/* Social Links */}
