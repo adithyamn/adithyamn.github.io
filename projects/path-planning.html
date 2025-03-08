@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path Planning in 2D Environment | Adithya M. N.</title>
+    <meta name="description" content="Implementation of probabilistic roadmaps and pure pursuit controller for efficient robot navigation">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="../" class="nav__logo">AMN</a>
+            <ul class="nav__menu">
+                <li><a href="../#about" class="nav__link">About</a></li>
+                <li><a href="../#projects" class="nav__link">Projects</a></li>
+                <li><a href="../#experience" class="nav__link">Experience</a></li>
+                <li><a href="../#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <h1 class="hero__title">Path Planning in 2D Environment</h1>
+            <div class="card__tags mt-1">
+                <span class="tag">Path Planning</span>
+                <span class="tag">PRM</span>
+                <span class="tag">Python</span>
+                <span class="tag">ROS</span>
+                <span class="tag">Robotics</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Image -->
+    <div class="container">
+        <img src="../assets/images/prm.PNG" alt="Path Planning Implementation" class="project-image">
+    </div>
+
+    <!-- Project Content -->
+    <article class="project-content container">
+        <section>
+            <h2>Project Overview</h2>
+            <p>Development of a sophisticated path planning system utilizing probabilistic roadmaps (PRM) and pure pursuit controller for efficient robot navigation in complex 2D environments. The system combines sampling-based planning with robust trajectory tracking to achieve reliable autonomous navigation.</p>
+        </section>
+
+        <section class="mt-2">
+            <h2>Technical Implementation</h2>
+            <p>The system implements several key components:</p>
+            <ul style="list-style: disc; margin-left: var(--space-lg); margin-bottom: var(--space-md);">
+                <li>Probabilistic Roadmap (PRM) for path planning</li>
+                <li>Pure Pursuit controller for trajectory tracking</li>
+                <li>Dynamic obstacle avoidance</li>
+                <li>Real-time path optimization</li>
+                <li>ROS integration for real-world deployment</li>
+            </ul>
+            <p>Core algorithms and features:</p>
+            <ul style="list-style: disc; margin-left: var(--space-lg); margin-bottom: var(--space-md);">
+                <li>Adaptive sampling strategies for PRM</li>
+                <li>A* search for optimal path selection</li>
+                <li>Dynamic lookahead distance calculation</li>
+                <li>Velocity profile generation</li>
+            </ul>
+        </section>
+
+        <section class="mt-2">
+            <h2>Key Features</h2>
+            <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: var(--space-lg);">
+                <div class="card">
+                    <h3>PRM Implementation</h3>
+                    <p>Efficient roadmap generation with adaptive sampling and connection strategies for complex environments.</p>
+                </div>
+                <div class="card">
+                    <h3>Trajectory Tracking</h3>
+                    <p>Pure Pursuit controller implementation with dynamic parameter tuning for smooth path following.</p>
+                </div>
+                <div class="card">
+                    <h3>Obstacle Avoidance</h3>
+                    <p>Real-time obstacle detection and avoidance using sensor fusion and local planning.</p>
+                </div>
+                <div class="card">
+                    <h3>ROS Integration</h3>
+                    <p>Seamless integration with ROS for deployment on real robotic platforms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-2">
+            <h2>Technologies Used</h2>
+            <div class="card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">ROS</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">Matplotlib</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">C++</span>
+            </div>
+        </section>
+
+        <section class="mt-2">
+            <h2>Results and Impact</h2>
+            <p>The implemented system achieved:</p>
+            <ul style="list-style: disc; margin-left: var(--space-lg);">
+                <li>Fast path planning in complex environments (< 100ms)</li>
+                <li>Smooth trajectory tracking with < 5cm error</li>
+                <li>Successful navigation in dynamic environments</li>
+                <li>Real-time performance on embedded systems</li>
+            </ul>
+        </section>
+
+        <section class="mt-2">
+            <h2>Future Developments</h2>
+            <p>Ongoing research focuses on:</p>
+            <ul style="list-style: disc; margin-left: var(--space-lg);">
+                <li>Integration of learning-based sampling strategies</li>
+                <li>Multi-robot coordination and path planning</li>
+                <li>3D environment extension</li>
+                <li>Advanced motion primitives for complex maneuvers</li>
+            </ul>
+        </section>
+    </article>
+
+    <!-- Navigation -->
+    <div class="container mt-2" style="display: flex; justify-content: space-between; padding: var(--space-xl) 0;">
+        <a href="../#projects" class="nav__link">← Back to Projects</a>
+        <a href="https://github.com" class="nav__link" target="_blank">View on GitHub →</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="section" style="padding: var(--space-lg) 0;">
+        <div class="container text-center">
+            <p>Designed & Built by Adithya M. N.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
