@@ -835,3 +835,67 @@ a:hover {
 .mt-2 { margin-top: var(--space-lg); }
 .mb-1 { margin-bottom: var(--space-md); }
 .mb-2 { margin-bottom: var(--space-lg); }
+
+.slideshow-container {
+    position: relative;
+    max-width: 45%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    opacity: 100;
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+.mySlides.show {
+    display: block;
+    opacity: 1; /* Fully visible when shown */
+}
+
+img {
+    width: 100%; /* Adjust as needed */
+    height: auto;
+}
+
+.dot {
+    height: 10px;
+    width: 15px;
+    margin: 0 2px;
+    margin-top: 1%;
+    background-color: #bbb;
+    border-radius: 25%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 1s ease;
+    border-radius: 3px;
+    user-select: none;
+    z-index: 1; /* Ensure arrows are above the images */
+}
+
+.prev {
+    left: 10px; /* Adjust as needed */
+}
+
+.next {
+    right: 10px; /* Adjust as needed */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

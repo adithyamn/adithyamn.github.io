@@ -33,54 +33,95 @@
         <div class="container">
             <br>
             <br>
-            <h1 class="hero__title">Configurable Modular Robot System</h1>
-            <div class="card__tags mt-1">
-                <span class="tag">Robotics</span>
-                <span class="tag">Control Systems</span>
-                <span class="tag">Patent</span>
-                <span class="tag">Python</span>
-                <span class="tag">ROS</span>
-            </div>
+            <h1 class="hero__title">Collaborative Multi-Robot System for Material Handling</h1>
         </div>
     </section>
 
     <!-- Project Image -->
-    <div class="container">
+    <!-- <div class="container">
         <img src="../assets/images/cmrs.png" alt="Configurable Modular Robot System" class="project-image">
         <img src="../assets/images/cmrs2.png" alt="CMRS Implementation" class="project-image mt-2">
+    </div>-->
+    <!-- Slideshow Container -->
+<div class="slideshow-container">
+
+    <!-- Slides -->
+    <div class="mySlides fade">
+        <img src="../assets/images/cmrs.png" alt="Configurable Modular Robot System" class="project-image">
     </div>
+
+    <div class="mySlides fade">
+        <img src="../assets/images/cmrs2.png" alt="CMRS Implementation" class="project-image">
+    </div>
+
+    <!-- Navigation Arrows -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Navigation Dots -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+</div>
 
     <!-- Project Content -->
     <article class="project-content container">
-        <section>
+        <!--<section>
             <h2>Project Overview</h2>
-            <p>The Configurable Modular Robot System (CMRS) is a patented innovation in robotics that enables dynamic reconfiguration and adaptable functionality. This system represents a significant advancement in modular robotics, allowing for real-time adaptation to various tasks and environments.</p>
+            <p>Imagine a team of robots seamlessly transporting objects in a warehouse—no human intervention needed. That was the goal of my bachelor thesis. I developed a Composite Robot Algorithm where multiple holonomic robots team up to transport materials efficiently. Using Python, I configured a co-operative path-planning algorithm, ensuring robots could collaborate, avoid collisions, and reach their destination together.</p>
         </section>
 
         <section class="mt-2">
-            <h2>Technical Implementation</h2>
-            <p>The system comprises several key components:</p>
-            <ul style="list-style: disc; margin-left: var(--space-lg); margin-bottom: var(--space-md);">
-                <li>Modular hardware units with standardized interfaces</li>
-                <li>Distributed control system using ROS (Robot Operating System)</li>
-                <li>Real-time configuration management software</li>
-                <li>Dynamic motion planning algorithms</li>
-                <li>Sensor fusion and state estimation</li>
-            </ul>
-            <p>The control architecture implements advanced algorithms for:</p>
-            <ul style="list-style: disc; margin-left: var(--space-lg); margin-bottom: var(--space-md);">
-                <li>Automatic module detection and configuration</li>
-                <li>Real-time kinematic chain optimization</li>
-                <li>Distributed task allocation</li>
-                <li>Fault detection and recovery</li>
-            </ul>
+            <h2>Software and Experience</h2>
+            <div class="card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">Git</span>
+                <span class="tag">Firebase<span>
+            </div>
+            <br>
+            <div class="card__tags">
+                <span class="tag">Embedded Systems</span>
+                <span class="tag">Multi-Robot Systems</span>
+                <span class="tag">Path Planning</span>
+            </div>
+        </section>-->
+        <section>
+            <div class="container">
+                <div class="section-card">
+                    <h2>Project Overview</h2>
+                    <p>Imagine a team of robots seamlessly transporting objects in a warehouse—no human intervention needed. That was the goal of my bachelor thesis. I developed a Composite Robot Algorithm where multiple holonomic robots team up to transport materials efficiently. Using Python, I configured a co-operative path-planning algorithm, ensuring robots could collaborate, avoid collisions, and reach their destination together.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container">
+                <div class="section-card">
+                    <h2>Software and Experience</h2>
+                    <div class="card__tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Firebase<span>
+                    </div>
+                    <br>
+                    <div class="card__tags">
+                        <span class="tag">Embedded Systems</span>
+                        <span class="tag">Multi-Robot Systems</span>
+                        <span class="tag">Path Planning</span>
+                    </div>
+                   </div>
+            </div>
         </section>
 
         <section class="mt-2">
-            <h2>Key Features</h2>
-            <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: var(--space-lg);">
+            <h2>More</h2>
+            <a href="https://clawar.org/wp-content/uploads/2023/02/rane4.pdf" class="button button--outline" target="_blank" rel="noopener noreferrer">Publication</a>
+            <a href="https://github.com/Collaborative-AMRs" class="button button--outline" target="_blank" rel="noopener noreferrer">Github</a>
+            <!--<div class="grid" style="grid-template-columns: repeat(2, 1fr); gap: var(--space-lg);">
                 <div class="card">
                     <h3>Hardware Innovation</h3>
+                    
                     <p>Novel mechanical interface design enabling secure, automatic connections between modules with integrated power and data transfer capabilities.</p>
                 </div>
                 <div class="card">
@@ -95,32 +136,9 @@
                     <h3>Patent Recognition</h3>
                     <p>The system's innovative design and functionality have been recognized with a patent, validating its unique contribution to the field.</p>
                 </div>
-            </div>
+            </div> -->
         </section>
 
-        <section class="mt-2">
-            <h2>Technologies Used</h2>
-            <div class="card__tags">
-                <span class="tag">Python</span>
-                <span class="tag">ROS</span>
-                <span class="tag">C++</span>
-                <span class="tag">OpenCV</span>
-                <span class="tag">TensorFlow</span>
-                <span class="tag">Control Theory</span>
-                <span class="tag">MATLAB</span>
-            </div>
-        </section>
-
-        <section class="mt-2">
-            <h2>Future Developments</h2>
-            <p>Ongoing research and development focuses on:</p>
-            <ul style="list-style: disc; margin-left: var(--space-lg);">
-                <li>Enhanced autonomous reconfiguration capabilities</li>
-                <li>Machine learning for optimal configuration selection</li>
-                <li>Advanced human-robot interaction interfaces</li>
-                <li>Integration with cloud robotics platforms</li>
-            </ul>
-        </section>
     </article>
 
     <!-- Navigation -->
