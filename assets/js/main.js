@@ -93,3 +93,12 @@ function showSlides(n) {
 setInterval(function() {
     plusSlides(1);
 }, 5000); // Change image every 5 seconds
+
+// Mobile Menu Toggle
+const toggleButton = document.querySelector('.nav__toggle');
+const navMenu = document.querySelector('.nav__menu');
+
+toggleButton.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    toggleButton.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+});

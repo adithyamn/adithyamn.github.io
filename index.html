@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Adithya M. N. - Graduate Mechatronics Engineer specializing in robotics, autonomous systems, and computer vision. Masters student at University of Twente.">
+    <meta name="description" content="System and Control Engineer from University of Twente">
     <meta name="keywords" content="robotics, control systems, computer vision, mechatronics, autonomous systems">
     <meta name="author" content="Adithya M. N.">
     
@@ -45,6 +45,10 @@
     <header class="header" role="banner">
         <nav class="nav container" role="navigation">
             <a href="#" class="nav__logo" aria-label="AMN Logo">Adithya Mylavarapu Naga</a>
+            <!-- Mobile Menu Button -->
+<button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span class="nav__toggle-icon"></span>
+</button>
             <ul class="nav__menu">
                 <li><a href="#about" class="nav__link">Skills</a></li>
                 <li><a href="#projects" class="nav__link">Projects</a></li>
@@ -107,8 +111,39 @@
         <section id="projects" class="section">
             <div class="container">
                 <div class="section-card">
-                    <h2 class="section__title">Featured Projects and Posts</h2>
+                    <h2 class="section__title">Featured Projects and Work</h2>
+                    <div style="display: flex; justify-content: flex-end;">
+                        <a href="projects/projects.html" class="button button--outline" target="_blank" rel="noopener noreferrer">All Projects and Certificates</a>
+                    </div>
                     <div class="grid">
+                        <a href="projects/safe.html" class="card">
+                            <img src="assets/images/safe1.png" alt="Safe Project" class="card__image">
+                            <div class="card__content">
+                                <h3 class="card__title"> Safety Metric for Human-Aerial Collaboration</h3>
+                                <p class="card__description">Master's Thesis - This research develops a safety metric that helps UAV navigate safely around humans, even in unpredictable wind conditions.</p>
+                                <div class="card__tags">
+                                    <span class="tag">MATLAB/Simulink</span>
+                                    <span class="tag">Gazebo</span>
+                                    <span class="tag">Git</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="projects/slam.html" class="card">
+                            <img src="assets/images/slam5.png" alt="SLAM Project" class="card__image">
+                            <div class="card__content">
+                                <h3 class="card__title"> Self-Exploration and Mapping for Autonomous Mobile Robots</h3>
+                                <p class="card__description">During my Robotics Internship at Aziobot B.V., I developed self-exploration and mapping for an autonomous floor-scrubbing robot. Using SLAM in ROS, frontier-based exploration, and LiDAR sensors</p>
+                                <div class="card__tags">
+                                    <span class="tag">ROS</span>
+                                    <span class="tag">Gazebo</span>
+                                    <span class="tag">Git</span>
+                                    <span class="tag">RViz</span>
+                                </div>
+                            </div>
+                        </a>
+
+
                         <a href="projects/cmrs.html" class="card">
                             <img src="assets/images/cmrs.png" alt="CMRS Project" class="card__image">
                             <div class="card__content">
@@ -157,32 +192,6 @@
                                     <span class="tag">Python</span>
                                     <span class="tag">Motion Planning</span>
                                     <span class="tag">State-Estimation</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="projects/behavioral-cloning.html" class="card">
-                            <img src="assets/images/BC.jpg" alt="Behavioral Cloning Project" class="card__image">
-                            <div class="card__content">
-                                <h3 class="card__title">Behavioral Cloning</h3>
-                                <p class="card__description">End-to-end deep learning solution for autonomous vehicle control using behavioral cloning.</p>
-                                <div class="card__tags">
-                                    <span class="tag">Deep Learning</span>
-                                    <span class="tag">Unity</span>
-                                    <span class="tag">TensorFlow</span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="projects/oscilloscope.html" class="card">
-                            <img src="assets/images/Osc.jpg" alt="Digital Oscilloscope Project" class="card__image">
-                            <div class="card__content">
-                                <h3 class="card__title">Digital Oscilloscope</h3>
-                                <p class="card__description">Implementation of a digital oscilloscope using Arduino and Python for signal analysis.</p>
-                                <div class="card__tags">
-                                    <span class="tag">Arduino</span>
-                                    <span class="tag">Python</span>
-                                    <span class="tag">Signal Processing</span>
                                 </div>
                             </div>
                         </a>

@@ -10,7 +10,7 @@
     --color-text: #8892b0;
     --color-text-light: #a8b2d1;
     --color-heading: #ccd6f6;
-    --color-primary: #64ffda;
+    --color-primary: #65ceff;
     --color-primary-light: rgba(100, 255, 218, 0.1);
     --color-card: rgba(2, 12, 27, 0.7);
 
@@ -298,12 +298,12 @@ a:hover {
 /* Button Styles */
 .button {
     display: inline-block;
-    padding: var(--space-sm) var(--space-lg);
+    padding: 10px 10px;
     border-radius: var(--radius-sm);
-    font-weight: 500;
+    font-weight: 600;
     font-family: var(--font-primary);
     font-size: var(--text-sm);
-    letter-spacing: 0.5px;
+    letter-spacing: 2px;
     transition: all var(--transition-normal);
     position: relative;
     border: 2px solid var(--color-primary);
@@ -661,6 +661,8 @@ a:hover {
         rgba(100, 255, 218, 0.03),
         rgba(100, 214, 255, 0.03)
     );
+    background-color: rgba(99, 116, 117, 0.1);
+    opacity: 1;
     border: 1px solid rgba(100, 255, 218, 0.1);
     border-radius: var(--radius-lg);
     padding: var(--space-md);
@@ -838,7 +840,7 @@ a:hover {
 
 .slideshow-container {
     position: relative;
-    max-width: 45%;
+    max-width: 50%;
     margin: auto;
 }
 
@@ -879,7 +881,9 @@ img {
     top: 50%;
     width: auto;
     padding: 16px;
-    color: white;
+    color: rgb(22, 1, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 1;
     font-weight: bold;
     font-size: 18px;
     transition: 1s ease;
@@ -898,4 +902,34 @@ img {
 
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
+}/* Mobile Menu Button Styles */
+.nav__toggle {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav__toggle-icon {
+    width: 30px;
+    height: 3px;
+    background: #f3f2f2;
+    display: block;
+    margin: 5px auto;
+}
+
+/* Show the button on mobile screens */
+@media (max-width: 768px) {
+    .nav__toggle {
+        display: block; /* Show button on mobile */
+    }
+
+    .nav__menu {
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack menu items vertically */
+    }
+
+    .nav__menu.active {
+        display: flex; /* Show menu when active */
+    }
 }
