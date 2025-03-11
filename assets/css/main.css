@@ -72,7 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: var(--text-4xl); }
-h2 { font-size: var(--text-3xl); }
+h2 { font-size: var(--text-3xl); 
+    letter-spacing: 0.2em; }
 h3 { font-size: var(--text-2xl); }
 h4 { font-size: var(--text-xl); }
 h5 { font-size: var(--text-lg); }
@@ -213,8 +214,8 @@ a:hover {
 }
 
 .hero__title {
-    font-weight: 600;
-    letter-spacing: 0.2em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
     font-size: var(--text-4xl);
     margin-bottom: var(--space-xs);
 }
@@ -304,7 +305,7 @@ a:hover {
     padding: 10px 10px;
     background: #1849dd;
     border-radius: var(--radius-sm);
-    font-weight: 300;
+    font-weight: 450;
     opacity: 1;    
     font-family: var(--font-primary);
     font-size: var(--text-sm);
