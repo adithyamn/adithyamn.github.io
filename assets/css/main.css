@@ -302,11 +302,13 @@ a:hover {
 .button {
     display: inline-block;
     padding: 10px 10px;
+    background: #1849dd;
     border-radius: var(--radius-sm);
-    font-weight: 600;
+    font-weight: 300;
+    opacity: 1;    
     font-family: var(--font-primary);
     font-size: var(--text-sm);
-    letter-spacing: 2px;
+    letter-spacing: 0.2em;
     transition: all var(--transition-normal);
     position: relative;
     border: 2px solid var(--color-primary);
@@ -327,10 +329,7 @@ a:hover {
     z-index: -1;
 }
 
-.button--primary {
-    background-color: var(--color-primary);
-    color: var(--color-background);
-}
+
 
 .button--outline {
     background-color: transparent;
@@ -340,6 +339,7 @@ a:hover {
 .button--primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+    color: rgba(100, 255, 218, 0.2);
 }
 
 .button--outline:hover {
