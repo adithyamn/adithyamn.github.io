@@ -5,14 +5,12 @@
 /* Custom Properties (Variables) */
 :root {
     /* Colors */
-    --color-background: #161d25;
+    --color-background: #051319;
     --color-text: #ffffff;
     --color-text-light: #ffffff;
     --color-heading: #ffffff;
-    --color-primary: #0f7efc;
+    --color-primary: #266afd;
     --color-primary-light: rgba(255, 255, 255, 0.1);
-    --color-card: #339c33;
-
     /* Typography */
     --font-primary: 'Google Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
@@ -144,7 +142,7 @@ a:hover {
   left: 0;
   right: 0;
   padding: var(--space-md) 0;
-  background-color: #161d25;
+  background-color: #051319;
   backdrop-filter: blur(10px);
   z-index: 1000;
   border-bottom: 1px solid rgba(54, 63, 82, 0.603);
@@ -307,16 +305,16 @@ a:hover {
 .button {
     display: inline-block;
     padding: 0.75em 0.75em;
-    background: #191f2b;
+    background: #151319;
     border-radius: var(--radius-sm);
-    font-weight: 300;
+    font-weight: 400;
     opacity: 1;    
     font-family: var(--font-primary);
     font-size: 10pt;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em;
     transition: all var(--transition-normal);
     position: relative;
-    border: 2px solid #0f7efc6e;
+    border: 1px solid #266afd;
     overflow: hidden;
 }
 
@@ -675,7 +673,7 @@ a:hover {
         rgba(100, 214, 255, 0.03)
     );
     
-    background-color: #161d252a;
+    background-color: #051319;
 
     opacity: 1;
     border: 1px solid #ebeef11f;
@@ -698,7 +696,7 @@ a:hover {
 .section__title,
 .contact__title {
     font-family: var(--font-primary);
-    background-color: #1d2631; 
+    background-color: #051319; 
     font-weight: 400;
     position: absolute;
     top: var(--space-sm);
