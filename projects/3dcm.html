@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human Aerial Robot Interaction| Adithya M. N.</title>
-    <meta name="description" content="Safety Metrics for Human Aerial Collaboration">
+    <title>Cartesian Manipulator Modeling and Control| Adithya M. N.</title>
+    <meta name="description" content="3D Cartesian Manipulator Modeling and Control">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
         <div class="container">
             <br>
             <br>
-            <h1 class="hero__title">Safety Metrics for Human Aerial Collaboration in presence of Aerodynamic Disturbances</h1>
+            <h1 class="hero__title">3D Cartesian Manipulator Modeling and Control</h1>
         </div>
     </section>
 
@@ -47,11 +47,14 @@
 
     <!-- Slides -->
     <div class="mySlides fade">
-        <img src="../assets/images/safe1.png" alt="Configurable Modular Robot System" class="project-image">
+        <img src="../assets/images/3dcm.png" alt="Model" class="project-image">
     </div>
 
     <div class="mySlides fade">
-        <img src="../assets/images/safe2.png" alt="CMRS Implementation" class="project-image">
+        <img src="../assets/images/3dcm1.png" alt="Force PD Controller" class="project-image">
+    </div>
+    <div class="mySlides fade">
+        <img src="../assets/images/3dcm2.png" alt="NMPC Controller" class="project-image">
     </div>
 
     <!-- Navigation Arrows -->
@@ -92,10 +95,13 @@
                     <h2>Project Overview</h2>
                     
                     
-                    <p>When aerial robots work closely with humans, wind disturbances can significantly impact the drone's stability and trajectory, creating potential safety hazards. This research simulates a comprehensive safety metric that guides an aerial robot's motion during such interactions, ensuring human safety even in windy conditions.
+                    <p>This project explores and compares two advanced control strategies for a 3-DOF Cartesian manipulator: a Force-Based Proportional-Derivative (PD) controller and Nonlinear Model Predictive Control (NMPC) using Acados. The aim is to achieve precise and efficient trajectory tracking through complex multi-point paths in 3D space.
 <br><br>
-                        The metric works by estimating the additional force and deviation caused by wind disturbances, allowing the robot to maintain safe distances from human collaborators. By incorporating this safety metric into a Non-Linear Model Predictive Controller (NMPC), the system generates control inputs that satisfy safety constraints throughout the drone's trajectory.</p>
-                        <a href="https://essay.utwente.nl/102108/" class="button button--outline" target="_blank" rel="noopener noreferrer">Documentation</a>
+                        It features a detailed dynamic robot model, quintic polynomial trajectory generation for smooth motion, and the implementation of both PD and NMPC for commanding forces. Comprehensive analysis includes 3D visualizations of actual and desired trajectories, alongside 2D plots detailing position/velocity tracking errors, commanded forces, power consumption, and cumulative energy.
+<br><br>
+                        This work highlights the strengths of reactive (PD) and predictive (NMPC) control in complex robotic motion scenarios.<br><br>
+                        <a href="https://docs.google.com/presentation/d/1FFdAi87ubeiynG71ffPjC0f1qn6VcTSX9y5xYGGpCvQ/edit?usp=sharing" class="button button--outline" target="_blank" rel="noopener noreferrer">More</a>
+                        <a href="https://drive.google.com/file/d/19rzy-b8gxO4m622xIAxTNumFnqLkyEgD/view?usp=sharing" class="button button--outline" target="_blank" rel="noopener noreferrer">Simulation Video</a>
                 </div>
             </div>
         </section>
@@ -105,15 +111,15 @@
                 <div class="section-card">
                     <h2>Software and Experience</h2>
                     <div class="card__tags">
-                        <span class="tag">C++</span>
-                        <span class="tag">MATLAB/Simulink</span>
-                        <span class="tag">Gazebo</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Acados</span>
+                        <span class="tag">CasADi</span>
                     </div>
                     <br>
                     <div class="card__tags">
-                        <span class="tag">Safety Analysis</span>
-                        <span class="tag">Dynamics Modelling</span>
-                        <span class="tag">Control Theory</span>
+                        <span class="tag">Dynamic Modeling</span>
+                        <span class="tag">Control Methods</span>
+                        <span class="tag">Trajectory Tracking</span>
                     </div>
                    </div>
             </div>
