@@ -9,7 +9,7 @@
     --color-text: #161b22;
     --color-text-light: #161b22;
     --color-heading: #161b22;
-    --color-primary: #254ea8;
+    --color-primary: #256fa8;
     --color-primary-light: rgba(255, 255, 255, 0.1);
     /* Typography */
     --font-primary: 'Google Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
@@ -438,13 +438,14 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-sm);
+    color: #256fa8;
 }
 
 .tag {
     font-family: var(--font-mono);
     font-size: 14px;
-    color: #0d1b36;
-    background-color: #c6d3e7;
+    color: #256fa8;
+    background-color: #c6dbe7;
     padding: 4px 8px;
     border-radius: var(--radius-sm);
     border: 1px solid rgba(100, 149, 255, 0.178);
@@ -457,12 +458,18 @@ a:hover {
 }
 
 .project-image {
-    max-width: 60%;
+    max-width: 67.5%;
     height: auto;
     border-radius: 8px;
     margin: 0 auto;
     display: block;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .project-image {
+        max-width: 100%;
+    }
 }
 
 .project-content {
