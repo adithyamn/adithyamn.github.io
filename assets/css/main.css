@@ -5,12 +5,14 @@
 /* Custom Properties (Variables) */
 :root {
     /* Colors */
-    --color-background: #ecfbfb;
+    --color-background: #c5c6c7;
     --color-text: #161b22;
     --color-text-light: #161b22;
     --color-heading: #161b22;
     --color-primary: #256fa8;
-    --color-primary-light: rgba(255, 255, 255, 0.1);
+    --color-border: #000000;
+    --color-secondary:  #e0e0e0;
+    --color-primary-light: #ffffff1a;
     /* Typography */
     --font-primary: 'Google Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
@@ -142,10 +144,10 @@ a:hover {
   left: 0;
   right: 0;
   padding: var(--space-md) 0;
-  background-color: rgb(221, 232, 230);
+  background-color: var(--color-secondary);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(54, 63, 82, 0.603);
+  border-bottom: 1px solid var(--color-border);
   transition: all var(--transition-normal);
 }
 
@@ -314,7 +316,7 @@ a:hover {
     letter-spacing: 0.15em;
     transition: all var(--transition-normal);
     position: relative;
-    border: 1px solid #266afd;
+    border: 1px solid var(--color-border);
     overflow: hidden;
 }
 
@@ -337,7 +339,8 @@ a:hover {
 
 .button--outline {
     background: var(--color-background);
-    color: #1a5edd;
+    color: var(--color-border);
+    ;
 }
 
 .button--primary:hover {
@@ -389,8 +392,8 @@ a:hover {
     left: -1px;
     right: -1px;
     bottom: -1px;
-    background: linear-gradient(45deg, var(--color-primary-light), transparent);
-    border-radius: 1px solid rgb(62, 96, 168);
+    background: linear-gradient(45deg, var(--color-background), transparent);
+    border-radius: 1px solid var(--color-border);
     z-index: -1;
     opacity: 0;
     transition: all var(--transition-normal);
@@ -677,10 +680,11 @@ a:hover {
 
 /* Section Card */
 .section-card {
-    background: #deede9;
+  background-color: var(--color-secondary);
+
     
     opacity: 1;
-    border: 1px solid #136dc7;
+    border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
     padding: var(--space-md);
     margin-top: var(--space-sm);
@@ -700,7 +704,7 @@ a:hover {
 .section__title,
 .contact__title {
     font-family: var(--font-primary);
-    background-color: #dae7ec; 
+    background-color: var(--color-background); 
     font-weight: 400;
     position: absolute;
     top: var(--space-sm);
@@ -709,7 +713,7 @@ a:hover {
     margin: 0;
     opacity: 1;
     padding: var(--space-xs) var(--space-sm);
-    border: 1px solid #2954ac;
+    border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     letter-spacing: 0.2em;
 }
